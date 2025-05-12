@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Dreams</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dreamlist.js" defer></script>
+  <script src="auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1> My Dreams </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="mydreams.html" class="active">My Dreams</a>
+      <a href="buddies.html">Buddies</a>
+      <a href="community.html">Community</a>
+      <a href="About.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dreamLog">
+      <h2>Dream Archives</h2>
+
+      <!-- Date Filter -->
+      <label for="filterDate">Filter by Date:</label>
+      <input type="date" id="filterDate" onchange="filterDreams()" />
+      
+
+      <!-- Dream List -->
+      <div id="dreamTimeline">
+        <ul id="dreamList">
+          <!-- Dreams will be injected here dynamically -->
+        </ul>
+      </div>
+
+      <!-- Feedback Message -->
+      <div id="feedbackMessage" style="font-weight: bold; margin-top: 20px;"></div>
+
+      <!-- Pagination Controls (Optional, if needed) -->
+      <div id="paginationControls">
+        <!-- Pagination buttons can be added here if needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>☠️ Dream deeper... © Super Naturals 2025</p>
+  </footer>
+
+  <div class="floating-ghost">
+    <div class="ghost-body">
+      <div class="ghost-eyes"></div>
+      <script src="auth.js"></script>
+
+</body>
+</html>

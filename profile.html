@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Super Natural</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+    <script>
+        function logout() {
+          localStorage.removeItem("isLoggedIn");
+          localStorage.removeItem("username");
+          window.location.href = "loginpage.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Profile</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="mydreams.html">My Dreams</a>
+            <a href="buddies.html">Buddies</a>
+            <a href="community.html">Community</a>
+            <a href="about.html">About</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="profile-container">
+                <!-- Update Profile Form -->
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="profilePicture">Profile Picture:</label>
+                    <input type="file" id="profilePicture" accept="image/*">
+                    <button type="submit">Update Profile</button>
+                </form>
+
+                <!-- Current Profile Details -->
+                <div id="profileDetails">
+                    <h3>Current Profile</h3>
+                    <p id="displayUsername"></p>
+                    <p id="displayEmail"></p>
+                    <img id="displayProfilePicture" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Super Natural </p>
+    </footer>
+
+    <script src="profile.js"></script>
+
+    <!-- Floating Ghost and Drip Effects -->
+    <div class="floating-ghost">
+        <div class="ghost-body">
+            <div class="ghost-eyes"></div>
+        </div>
+    </div>
+    
+    <div class="drip-container">
+        <div class="drip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
+    </div>
+</body>
+</html>

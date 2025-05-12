@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login-Super Natural</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <header>
+    <h1>Super Natural</h1>
+  </header>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Login</button>
+      <p id="errorMessage" class="error-message"></p>
+    </form>
+    <p>Don't have an account? <a href="register.html">Sign up</a></p>
+  </div>
+
+  <!-- Spooky elements -->
+  <div class="floating-ghost">
+    <div class="ghost-body">
+      <div class="ghost-eyes"></div>
+    </div>
+  </div>
+
+  <div class="drip-container">
+    <div class="drip"></div>
+    <div class="drip"></div>
+    <div class="drip"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
